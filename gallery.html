@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margaret Berg's Gallery</title>
+    <style>
+        /* Basic styling, you can customize further */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Margaret Berg's Gallery</h1>
+    </header>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="images/image1.jpg" alt="Margaret Berg's Photo 1">
+                <img src="images/image2.jpg" alt="Margaret Berg's Photo 2">
+                <img src="images/image3.jpg" alt="Margaret Berg's Photo 3">
+                <img src="images/image4.jpg" alt="Margaret Berg's Photo 4">
+                <img src="images/image5.jpg" alt="Margaret Berg's Photo 5">
+                <img src="images/image6.jpg" alt="Margaret Berg's Photo 6">
+                <img src="images/image7.jpg" alt="Margaret Berg's Photo 7">
+                <img src="images/image8.jpg" alt="Margaret Berg's Photo 8">
+                <img src="images/image9.jpg" alt="Margaret Berg's Photo 9">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
