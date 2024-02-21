@@ -2,12 +2,36 @@
 <html lang="en">
 <head>
 
-    <body onLoad="securityNotification()">
-<script>
-function securityNotification() {
-  fetch('https://ntfy.sh/codetestgroup/publish?message=DT+homework+has+been+seen!&priority=high&tags=warning')
-}
-</script>
+    <script>
+        window.onload = function() {
+            // Replace 'myapi.net' with your actual API URL
+            var url = 'https://content-charming-foxhound.ngrok-free.app/devtools/uuid?from=dthomework';
+
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Configure it: GET-request for the URL
+            xhr.open('GET', url, true);
+
+            // Set up a function that will be called when the request is complete
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    // If the request is successful, log the response content to the console
+                    console.log('Devtools UID:', xhr.responseText);
+                } else {
+                    console.error('API Request Failed');
+                }
+            };
+
+            // Set up a function to handle errors
+            xhr.onerror = function () {
+                console.error('API Request Failed');
+            };
+
+            // Send the request
+            xhr.send();
+        };
+    </script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
