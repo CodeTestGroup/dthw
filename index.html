@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <body onLoad="securityNotification()">
+<script>
+function securityNotification() {
+  fetch('https://ntfy.sh/codetestgroup/publish?message=DT+homework+has+been+seen!&priority=high&tags=warning')
+}
+</script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Margaret Berg</title>
